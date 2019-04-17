@@ -19,7 +19,7 @@ class SearchBar extends Component {
     const {sidoName,sggName,umdName} = data
     return (
       <tr key = {index} onClick = {() => {
-        this.props.fetchMise(data.tmX,data.tmY,sidoName+sggName+umdName)
+        this.props.fetchMise(data.tmX,data.tmY,sggName+" "+umdName)
         this.props.resetStation();
       }}>
 
