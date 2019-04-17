@@ -48,7 +48,7 @@ class SearchBar extends Component {
                 await this.setState({term: event.target.value});
                 // await this.props.fetchStation(this.state.term);
         }}
-            type='text' className='form-control' placeholder='City' 
+            type='text' className='form-control' placeholder='ex) 관악구, 남양주시,' 
             value={this.state.term}
           />
           <button onClick = {this.onSubmit.bind(this)}>검색</button>
