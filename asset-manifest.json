@@ -1,13 +1,13 @@
 {
-  "main.css": "/mise/static/css/main.60238e65.chunk.css",
-  "main.js": "/mise/static/js/main.952788f1.chunk.js",
-  "main.js.map": "/mise/static/js/main.952788f1.chunk.js.map",
+  "main.css": "/mise/static/css/main.1a3cd86d.chunk.css",
+  "main.js": "/mise/static/js/main.455b5606.chunk.js",
+  "main.js.map": "/mise/static/js/main.455b5606.chunk.js.map",
   "runtime~main.js": "/mise/static/js/runtime~main.a8b92899.js",
   "runtime~main.js.map": "/mise/static/js/runtime~main.a8b92899.js.map",
   "static/js/2.7b68205e.chunk.js": "/mise/static/js/2.7b68205e.chunk.js",
   "static/js/2.7b68205e.chunk.js.map": "/mise/static/js/2.7b68205e.chunk.js.map",
   "index.html": "/mise/index.html",
-  "precache-manifest.675b8f92e7313e1d712a608dd7ef9354.js": "/mise/precache-manifest.675b8f92e7313e1d712a608dd7ef9354.js",
+  "precache-manifest.9583735998372bae76e677ea5d868580.js": "/mise/precache-manifest.9583735998372bae76e677ea5d868580.js",
   "service-worker.js": "/mise/service-worker.js",
-  "static/css/main.60238e65.chunk.css.map": "/mise/static/css/main.60238e65.chunk.css.map"
+  "static/css/main.1a3cd86d.chunk.css.map": "/mise/static/css/main.1a3cd86d.chunk.css.map"
 }
