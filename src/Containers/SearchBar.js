@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as  fetchMise  from '../actions/index';
+import './SearchBar.css'
 
 class SearchBar extends Component {
   constructor(props) {
@@ -18,16 +19,15 @@ class SearchBar extends Component {
 
     const {sidoName,sggName,umdName} = data
     return (
-      <tr key = {index} onClick = {() => {
+      <div className = "searchListTable">
+      <tr  key = {index} onClick = {() => {
         this.props.fetchMise(data.tmX,data.tmY,sggName+" "+umdName)
         this.props.resetStation();
       }}>
 
-        <td>{sidoName}</td>
-        <td> {sggName}</td>
-        <td> {umdName}</td>
-
+        <td className = "searchList">{sidoName} {sggName} {umdName}</td>
       </tr>
+      </div>
     );
   }
 
@@ -53,7 +53,7 @@ class SearchBar extends Component {
           />
           <button onClick = {this.onSubmit.bind(this)}>검색</button>
 
-          <tbody>
+          <tbody className = "searchListTable">
           {this.props.stations.map(this.autoComplete.bind(this))}
           </tbody>
         </div>

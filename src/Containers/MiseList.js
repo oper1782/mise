@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import './MiseList.css'
+
 
 const XMLParser = require('react-xml-parser');
 
@@ -96,12 +98,12 @@ class MiseList extends Component {
 
     return (
       <tr key = {index}>
-        <td>
+        <td className = "td">
           {data.address}
         </td>
-        <td style = {this.miseGradColor10(data.pm10)}>{this.miseGradText10(data.pm10)} {data.pm10}</td>
-        <td style = {this.miseGradColor25(data.pm25)}>{this.miseGradText25(data.pm25)} {data.pm25}</td>
-        <td>{data.dataTime}/></td>
+        <td style = {this.miseGradColor10(data.pm10)} className = "td">{this.miseGradText10(data.pm10)} {data.pm10}</td>
+        <td style = {this.miseGradColor25(data.pm25)} className = "td">{this.miseGradText25(data.pm25)} {data.pm25}</td>
+        <td className = "td">{data.dataTime}/></td>
 
       </tr>
     );
@@ -123,11 +125,11 @@ class MiseList extends Component {
         { this.handleError() }
         <table className='table table-hover'>
           <thead>
-            <tr>
-              <th>장소</th>
-              <th>미세먼지</th>
-              <th>초미세먼지 </th>
-              <th>예보시간 </th>
+            <tr className = "td">
+              <th className = "td">장소</th>
+              <th className = "td">미세먼지</th>
+              <th className = "td">초미세먼지 </th>
+              <th className = "td">예보시간 </th>
             </tr>
           </thead>
           <tbody>
